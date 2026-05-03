@@ -1,0 +1,94 @@
+/* Style untuk label pulau - lebih rapi dan tidak ketutupan */
+.island-label {
+    background: transparent !important;
+    border: none !important;
+    z-index: 1000 !important;
+}
+
+.island-label div {
+    transition: transform 0.2s ease;
+}
+
+.island-label div:hover {
+    transform: scale(1.05);
+}
+
+/* Style untuk label kota */
+.city-label {
+    background: transparent !important;
+    border: none !important;
+    z-index: 900 !important;
+}
+
+.city-label div {
+    transition: all 0.2s ease;
+}
+
+.city-label div:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,1) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+
+/* Animasi pulse untuk marker */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Hover effect untuk marker */
+.custom-marker div:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Style untuk popup */
+.custom-popup .leaflet-popup-content-wrapper {
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.custom-popup .leaflet-popup-tip {
+    background: #764ba2;
+}
+
+/* Style untuk tombol reset */
+#reset-indonesia-view {
+    transition: all 0.3s ease;
+    z-index: 2000;
+}
+
+#reset-indonesia-view:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Loading animation */
+.o_loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2000;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.o_loading i {
+    color: #764ba2;
+}
