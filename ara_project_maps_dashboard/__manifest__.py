@@ -8,6 +8,7 @@
         ======================
         Displays all projects with their locations on an interactive map.
     """,
+    'images': ['static/description/banner.gif'],
     'author': 'ARA SOFT',
     'depends': ['base', 'project', 'contacts', 'web'],
     "data": [
