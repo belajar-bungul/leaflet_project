@@ -8,7 +8,7 @@
         ======================
         Displays all projects with their locations on an interactive map.
     """,
-    'images': ['static/description/banner.gif'],
+    'images': ['static/description/banner sale.gif'],
     'author': 'ARA SOFT',
     'depends': ['base', 'project', 'contacts', 'web'],
     "data": [
@@ -24,7 +24,7 @@
             'ara_project_maps_dashboard/static/src/js/project_map_action.js',
         ],
     },
-    'price' :40.67,
+    'price' :35,
     'currency' : 'USD',
     'installable': True,
     'application': False,
